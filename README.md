@@ -7,6 +7,8 @@
 - [github.com/zackvuldin](https://github.com/zackvuldin/Image-Search-Application)
 - [deployment link](https://github.com/zackvuldin/Image-Search-Application)
 
+---
+
 ## Project Schedule
 
 | Day   | Deliverable                                          | Status |
@@ -22,7 +24,9 @@
 
 ## Project Description
 
-Search and browse a variety of images! I want the user to be able to enter in any keyword (Example: Fish) and it will pop up a variety of fish photos! I'll call it...Vuldin Images!
+Search and browse a variety of images! I want the user to be able to enter in any keyword (Example: Fish) and it will pop up a variety of fish photos! Under the image it will have owner credit and download link. I'll call it...Vuldin Images!
+
+---
 
 ## API Database Potentials, but didn't choose:
 
@@ -30,80 +34,56 @@ I spent so much time searching around the Repo for APIs and almost 90% of them w
 
 ---
 
-[Big ML](https://bigml.com/)
-
-// 40min // No idea how to use the API. They want me to download or something along those lines?
+[Big ML](https://bigml.com/) - // 40min // No idea how to use the API. They want me to download or something along those lines?
 
 Machine learning that mainly concentrates on decision trees.
 
 ---
 
-[OpenCorporates](http://api.opencorporates.com/documentation/API-Reference)
-
-// 15min // This API works, but kinda complicated on how to get company name out
+[OpenCorporates](http://api.opencorporates.com/documentation/API-Reference) - // 15min // This API works, but kinda complicated on how to get company name out
 OpenCorporates: Data on corporate entities and directors in many countries
 
 ---
 
-[US National Vulnerability Database](https://nvd.nist.gov/vuln/Data-Feeds/JSON-feed-changelog)
-
-// 20min // I literally have no idea how this one works.
+[US National Vulnerability Database](https://nvd.nist.gov/vuln/Data-Feeds/JSON-feed-changelog) - // 20min // I literally have no idea how this one works.
 
 ---
 
-[Security Trails](https://docs.securitytrails.com/docs)
-
-Domain and IP related information such as current and historical WHOIS and DNS records
+[Security Trails](https://docs.securitytrails.com/docs) - Domain and IP related information such as current and historical WHOIS and DNS records
 
 ---
 
-[IBM Watson](https://developer.ibm.com/technologies/artificial-intelligence/)
-
-// 10 minute-works // 30min // Nevermind; it doesn’t work. You have to do a LOT more.
+[IBM Watson](https://developer.ibm.com/technologies/artificial-intelligence/) - // 10 minute-works // 30min // Nevermind; it doesn’t work. You have to do a LOT more.
 IBM Watson-process of preparing data and to run predictive analysis
 
 ---
 
-[Time Door](https://timedoor.io/)
-
-API for statistical insights into time series data
+[Time Door](https://timedoor.io/) - API for statistical insights into time series data
 
 ---
 
-[OpenSource libraries](https://libraries.io/api)
-
-OpenSource software libraries
+[OpenSource libraries](https://libraries.io/api) - OpenSource software libraries
 
 ---
 
-[Keen](https://keen.io/)
-
-Data analytics
+[Keen](https://keen.io/) - Data analytics
 
 ---
 
-[NASA](https://api.nasa.gov/index.html)
-
-// 10 minutes // NASA API Works.
+[NASA](https://api.nasa.gov/index.html) - // 10 minutes // NASA API Works.
 NASA
 
 ---
 
-[Clarifai](https://www.clarifai.com/developer)
-
-Clarifai, computer vision. Image and video recognition
+[Clarifai](https://www.clarifai.com/developer) - Clarifai, computer vision. Image and video recognition
 
 ---
 
-[Sky Biometry](https://skybiometry.com/)
-
-Face detection, emotional analysis, face grouping, recognition service and tagging the photo.
+[Sky Biometry](https://skybiometry.com/) - Face detection, emotional analysis, face grouping, recognition service and tagging the photo.
 
 ---
 
-[Deep Code AI](https://www.deepcode.ai/)
-
-AI powered, real-time semantic code analysis
+[Deep Code AI](https://www.deepcode.ai/) - AI powered, real-time semantic code analysis
 
 ---
 
@@ -114,8 +94,8 @@ The documentation has a lot of utilities to use.
 
 **EXAMPLE OF API KEY BEING USED:**
 
-```
-https://pixabay.com/api/?key={ KEY }&q=yellow+flowers&image_type=photo
+```jSON
+https://pixabay.com/api/?key=18550778-11774fb291f3a731ce9063d4e&q=yellow+flowers&image_type=photo
 {
 "total": 4692,
 "totalHits": 500,
@@ -155,26 +135,35 @@ https://pixabay.com/api/?key={ KEY }&q=yellow+flowers&image_type=photo
 }
 ```
 
+---
+
 ## Wireframes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
+- [Main Page](https://res.cloudinary.com/vuldin/image/upload/v1601655749/Project%20API%20-%20WireFrames/Main_Page_wwtayb.jpg)
+- [Mobile - Searched Page](https://res.cloudinary.com/vuldin/image/upload/v1601655749/Project%20API%20-%20WireFrames/mobile-searched_page_gybnhb.jpg)
+- [Mobile - Destination](https://res.cloudinary.com/vuldin/image/upload/v1601655749/Project%20API%20-%20WireFrames/Mobile_Destination_ng8vry.jpg)
+- [Desktop/Tablet - Searched Page](https://res.cloudinary.com/vuldin/image/upload/v1601655752/Project%20API%20-%20WireFrames/Desktop-searched_page_k5dkvh.jpg)
+- [Desktop/Tablet - Destination](https://res.cloudinary.com/vuldin/image/upload/v1601655751/Project%20API%20-%20WireFrames/Desktop_Destination_wgu9cc.jpg)
+- [react architecture](https://docs.google.com/drawings/d/1wEFd-Z0YbSAlLEe5Sg1_df_pZjACf_28xLhK8hvd8lA/edit?usp=sharing)
 
-- [add link to your wireframes]()
-- [add link to your react architecture]()
+---
 
 ## MVP Time-Frame
 
-| Component                  | Priority | Estimated Time | Actual Time |
-| :------------------------- | :------- | :------------- | :---------- |
-| Making sure API link works | H        | 2hr            | hr          |
-| Having the API call return | H        | 2hr            | hr          |
-| Search bar using Form      | H        | 2hr            | hr          |
-| Search button              | H        | 2hr            | hr          |
-| Images to show             | H        | 3hr            | hr          |
-| Header/Footer items        | L        | 1hr            | hr          |
-| Footer items               | L        | 1hr            | hr          |
-| Mobile Priority            | H        | 2hr            | hr          |
-| Total                      | H        | 15hr           | hr          |
+| Component                              | Priority | Estimated Time | Actual Time |
+| :------------------------------------- | :------- | :------------- | :---------- |
+| Making sure API link works             | H        | 1hr            | hr          |
+| Having the API call return             | H        | 1hr            | hr          |
+| Image Search going back to API         | H        | 2hr            | hr          |
+| Image List shows images                | H        | 2hr            | hr          |
+| Image View w/ download and author link | H        | 2hr            | hr          |
+| Search bar using Form                  | H        | 2hr            | hr          |
+| Search button                          | H        | 2hr            | hr          |
+| Images to show                         | H        | 3hr            | hr          |
+| Header/Footer items                    | L        | 1hr            | hr          |
+| Footer items                           | L        | 1hr            | hr          |
+| Mobile Priority                        | H        | 2hr            | hr          |
+| Total                                  | H        | 19hr           | hr          |
 
 ## PostMVP Time-Frame
 
@@ -193,11 +182,16 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 - Header/Footer components
 - Mobile priority
 - Search button and Search bar/form
+- Image Search goes back to API and returns list of images
+- Image List shows images and goes back to API database
+- Image View will also have download and owner credit connected
 
 ### PostMVP
 
 - Vuldin Images Logo to be created and used
 - Have the entire site be a GrayScale theme
+
+---
 
 ## Components
 
@@ -211,21 +205,28 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 | Images        | Renders the images when user clicks on Search button |
 | Logo          |     Renders my Vuldin Images logo, very postMVP      |
 
+---
+
 ## Additional Libraries
 
 - bootstrap
 - React
 - fontAwesome
 - pixabay
+- SCSS
+
+---
 
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description. Code snippet should not be greater than 10 lines of code.
 
-```
+```javaScript
 function reverse(string) {
 	// here is the code to reverse a string of text
 }
 ```
+
+---
 
 ## Issues and Resolutions
