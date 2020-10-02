@@ -14,7 +14,7 @@
 | Day 1 | Project Approval / wire-framing / react architecture | [ ]    |
 | Day 2 | Making sure I can get the API recall information out | [ ]    |
 | Day 3 | MVP                                                  | [ ]    |
-| Day 4 | MVP + HTML/CSS                                       | [ ]    |
+| Day 4 | MVP + HTML/CSS w/ SCSS                               | [ ]    |
 | Day 5 | MVP/P-MVP + debugging                                | [ ]    |
 | Day 6 | Deadline: Presentation                               | [ ]    |
 
@@ -176,15 +176,16 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 | Mobile Priority            | H        | 2hr            | hr          |
 | Total                      | H        | 15hr           | hr          |
 
-## PostMVP
+## PostMVP Time-Frame
 
 | Component          | Priority | Estimated Time | Actual Time |
 | :----------------- | :------- | :------------- | :---------- |
 | GrayScale theme    | L        | 1hr            | hr          |
+| Try using SCSS!    | L        | 1hr            | hr          |
 | Vuldin Images logo | L        | 3hr            | hr          |
-| Total              | H        | 4hr            | hr          |
+| Total              | H        | 5hr            | hr          |
 
-#### MVP Time-Frame
+### MVP
 
 - Make sure API fetches the correct request
 - Images show on page
@@ -193,7 +194,7 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 - Mobile priority
 - Search button and Search bar/form
 
-#### PostMVP
+### PostMVP
 
 - Vuldin Images Logo to be created and used
 - Have the entire site be a GrayScale theme
@@ -209,14 +210,6 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 | Search Button |      Renders search button to initialize search      |
 | Images        | Renders the images when user clicks on Search button |
 | Logo          |     Renders my Vuldin Images logo, very postMVP      |
-
-## Time Frame
-
-| Component         | Priority | Estimated Time | Time Invetsted | Actual Time |
-| ----------------- | :------: | :------------: | :------------: | :---------: |
-| Adding Search Bar |    H     |      3hrs      |      hrs       |     hrs     |
-| Working with API  |    H     |      3hrs      |      hrs       |     hrs     |
-| Total             |    H     |      6hrs      |      hrs       |     hrs     |
 
 ## Additional Libraries
 
