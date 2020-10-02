@@ -2,7 +2,7 @@
 
 ## Project Links
 
-- [github](https://github.com/zackvuldin/Unit-2-Project)
+- [github](https://github.com/zackvuldin/Image-Search-Application)
 - [add your deployment link]()
 
 ## Project Description
