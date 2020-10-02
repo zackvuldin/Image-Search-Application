@@ -13,7 +13,7 @@
 
 | Day   | Deliverable                                          | Status |
 | :---- | :--------------------------------------------------- | :----- |
-| Day 1 | Project Approval / wire-framing / react architecture | [ ]    |
+| Day 1 | Project Approval / wire-framing / react architecture | [x]    |
 | Day 2 | Making sure I can get the API recall information out | [ ]    |
 | Day 3 | MVP                                                  | [ ]    |
 | Day 4 | MVP + HTML/CSS w/ SCSS                               | [ ]    |
@@ -95,7 +95,7 @@ The documentation has a lot of utilities to use.
 **EXAMPLE OF API KEY BEING USED:**
 
 ```jSON
-https://pixabay.com/api/?key=18550778-11774fb291f3a731ce9063d4e&q=yellow+flowers&image_type=photo
+https://pixabay.com/api/?key={ key }&q=yellow+flowers&image_type=photo
 {
 "total": 4692,
 "totalHits": 500,
@@ -152,8 +152,8 @@ https://pixabay.com/api/?key=18550778-11774fb291f3a731ce9063d4e&q=yellow+flowers
 
 | Component                              | Priority | Estimated Time | Actual Time |
 | :------------------------------------- | :------- | :------------- | :---------- |
-| Making sure API link works             | H        | 1hr            | hr          |
-| Having the API call return             | H        | 1hr            | hr          |
+| Making sure API link works             | H        | 1hr            | .5 hr       |
+| Having the API call return             | H        | 1hr            | .5 hr       |
 | Image Search going back to API         | H        | 2hr            | hr          |
 | Image List shows images                | H        | 2hr            | hr          |
 | Image View w/ download and author link | H        | 2hr            | hr          |
@@ -163,16 +163,18 @@ https://pixabay.com/api/?key=18550778-11774fb291f3a731ce9063d4e&q=yellow+flowers
 | Header/Footer items                    | L        | 1hr            | hr          |
 | Footer items                           | L        | 1hr            | hr          |
 | Mobile Priority                        | H        | 2hr            | hr          |
-| Total                                  | H        | 19hr           | hr          |
+| Use SASS or SCSS                       | H        | 2hr            | hr          |
+| Total                                  | H        | 21hr           | hr          |
 
 ## PostMVP Time-Frame
 
-| Component          | Priority | Estimated Time | Actual Time |
-| :----------------- | :------- | :------------- | :---------- |
-| GrayScale theme    | L        | 1hr            | hr          |
-| Try using SCSS!    | L        | 1hr            | hr          |
-| Vuldin Images logo | L        | 3hr            | hr          |
-| Total              | H        | 5hr            | hr          |
+| Component                         | Priority | Estimated Time | Actual Time |
+| :-------------------------------- | :------- | :------------- | :---------- |
+| GrayScale theme                   | L        | 1hr            | hr          |
+| ImageView: Use modal w/ bootstrap | L        | 3hr            | hr          |
+| Vuldin Images logo                | L        | 3hr            | hr          |
+| Add API credit to Footer          | M        | 1hr            | hr          |
+| Total                             | H        | 8hr            | hr          |
 
 ### MVP
 
@@ -185,6 +187,7 @@ https://pixabay.com/api/?key=18550778-11774fb291f3a731ce9063d4e&q=yellow+flowers
 - Image Search goes back to API and returns list of images
 - Image List shows images and goes back to API database
 - Image View will also have download and owner credit connected
+- Use SASS or SCSS
 
 ### PostMVP
 
@@ -204,6 +207,9 @@ https://pixabay.com/api/?key=18550778-11774fb291f3a731ce9063d4e&q=yellow+flowers
 | Search Button |      Renders search button to initialize search      |
 | Images        | Renders the images when user clicks on Search button |
 | Logo          |     Renders my Vuldin Images logo, very postMVP      |
+| Image Search  |      Will have the search bar and search button      |
+| Image List    |     Renders the list of images after user input      |
+| Image View    |         Will show the enlarged image at end          |
 
 ---
 
