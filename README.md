@@ -14,7 +14,7 @@
 | Day   | Deliverable                                          | Status |
 | :---- | :--------------------------------------------------- | :----- |
 | Day 1 | Project Approval / wire-framing / react architecture | [x]    |
-| Day 2 | Making sure I can get the API recall information out | [ ]    |
+| Day 2 | Making sure I can get the API recall information out | [x]    |
 | Day 3 | MVP                                                  | [ ]    |
 | Day 4 | MVP + HTML/CSS w/ SCSS                               | [ ]    |
 | Day 5 | MVP/P-MVP + debugging                                | [ ]    |
@@ -154,7 +154,7 @@ https://pixabay.com/api/?key={ key }&q=yellow+flowers&image_type=photo
 | :------------------------------------- | :------- | :------------- | :---------- |
 | Making sure API link works             | H        | 1hr            | .5 hr       |
 | Having the API call return             | H        | 1hr            | .5 hr       |
-| Image Search going back to API         | H        | 2hr            | hr          |
+| Image Search going back to API         | H        | 2hr            | 1 hr        |
 | Image List shows images                | H        | 2hr            | hr          |
 | Image View w/ download and author link | H        | 2hr            | hr          |
 | Search bar using Form                  | H        | 2hr            | hr          |
