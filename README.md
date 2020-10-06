@@ -236,3 +236,14 @@ function reverse(string) {
 ---
 
 ## Issues and Resolutions
+
+``` javaScript
+index.js:1 Warning: Each child in a list should have a unique "key" prop.
+
+Check the render method of `ImageList`. See https://fb.me/react-warning-keys for more information.
+    in p (at ImageList.js:6)
+    in ImageList (at App.js:60)
+    in div (at App.js:58)
+    in App (at src/index.js:9)
+    in StrictMode (at src/index.js:8)
+```
