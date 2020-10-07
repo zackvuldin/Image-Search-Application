@@ -26,7 +26,7 @@ const ImageList = (props) => {
 								<BrowserRouter>
 									<Link
 										to={{
-											path: `/image/${image.id}`,
+											pathname: `/image/${image.id}`,
 											state: { props },
 										}}>
 										<button>View</button>
