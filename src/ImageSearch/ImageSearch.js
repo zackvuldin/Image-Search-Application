@@ -9,12 +9,7 @@ const ImageSearch = ({ handleGetRequest }) => {
 	<div className='imageSearch'>
 		<div>
 			<form onSubmit={handleGetRequest} className='imageSearch_form'>
-				<input
-					type='text'
-					autoComplete='off'
-					name='searchValue'
-					placeholder='search for images...'
-				/>
+				<input type='text' autoComplete='off' name='searchValue' placeholder='search for images...'/>
 				<button>Search</button>
 			</form>
 		</div>
@@ -22,3 +17,7 @@ const ImageSearch = ({ handleGetRequest }) => {
 	)};
 
 export default ImageSearch;
+
+
+	// props successfully being logged
+	// console.log(props);

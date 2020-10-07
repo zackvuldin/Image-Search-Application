@@ -1,11 +1,11 @@
-.imageSearch {
+/* .imageSearch {
   width: 100%;
   text-align: center;
   margin-bottom: 3rem;
   position: relative;
 }
 
-.imageSearch__form input {
+.imageSearch_form input {
   margin: 0 auto;
   background-color: transparent;
   border: transparent;
@@ -19,11 +19,11 @@
   margin-right: 10px;
 }
 
-.imageSearch__form input:focus {
+.imageSearch_form input:focus {
   outline: none;
 }
 
-.imageSearch__form button {
+.imageSearch_form button {
   border: 0;
   width: 7%;
   position: absolute;
@@ -31,4 +31,4 @@
   background: transparent;
   border: solid 2px #34495e;
   color: #fff;
-}
+} */

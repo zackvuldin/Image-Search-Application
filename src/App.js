@@ -22,7 +22,8 @@ const API_KEY = '18550778-11774fb291f3a731ce9063d4e';
 // stackoverflow with extends react.component
 class App extends React.Component {
 	state = {
-		images: []
+		images: [],
+		error: null
 	};
 
 	// not using the traditional function b/c i dont want the keyword to bind itself to its parent method instead of its parent class
@@ -41,12 +42,18 @@ class App extends React.Component {
 		const request = await fetch(url);
 
 		const response = await request.json();
+		// check
+		if (!searchTerm) {
+			this.setState({ error: "Please provide a value."})
+		} else {
+			this.setState({ images: response.hits, error: null })
+		}
 
-		this.setState({ images: response.hits });
+		// this.setState({ images: response.hits });
 
 		// console.log(response.hits)
-		console.log(searchTerm);
-		console.log(this.state.images);
+		// console.log(searchTerm);
+		// console.log(this.state.images);
 	};
 	// this method only runs first and its when the component first runs on the web browser.
 	// "this" is referring to the app component and then in the app component we have a method called "handleGetRequest"
@@ -57,7 +64,20 @@ class App extends React.Component {
 		return (
 			<div>
 				<ImageSearch handleGetRequest={this.handleGetRequest} />
-				<ImageList images={this.state.images}/>
+				{/* <Switch>
+					<Route> */}
+					{this.state.error !== null ? (
+						<div style={{ color: '#fff', textAlign: 'center' }}>
+							{this.state.error}
+						</div>
+					) : (
+						<ImageList images={this.state.images} />
+					)}
+					{/* </Route>
+					<Route>
+
+					</Route>
+				</Switch> */}
 				{/* { this.state.images.length > 0 && this.state.images.map((image) => {
 					return <p key={image.id}>{ image.tags }</p>
 				})} */}
