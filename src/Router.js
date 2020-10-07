@@ -8,11 +8,11 @@ const Router = () => {
 	return (
 	<BrowserRouter>
 		<Switch>
-			<Route path='/' component={App} exact />
+			<Route path='/' component={App} exact={true} />
 			<Route path='/image/:id' component={ImageView} />
 		</Switch>
 	</BrowserRouter>
 	)
 };
-// renders in jsx file, not app. with router logic
+
 export default Router;

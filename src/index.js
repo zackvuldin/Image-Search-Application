@@ -5,15 +5,15 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import "./styles/styles.css"
 // import 'bootstrap/dist/css/bootstrap.min.css'
-import Router from './Router'
-import { BrowserRouter } from 'react-router-dom'
+// import Router from './Router'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 ReactDOM.render(
-	<BrowserRouter>
+	<Router>
 		<React.StrictMode>
 			<App />
 		</React.StrictMode>
-	</BrowserRouter>,
+	</Router>,
 	document.getElementById('root')
 );
 
