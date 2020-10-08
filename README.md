@@ -16,7 +16,7 @@
 | Day 1 | Project Approval / wire-framing / react architecture | [x]    |
 | Day 2 | Making sure I can get the API recall information out | [x]    |
 | Day 3 | MVP                                                  | [x]    |
-| Day 4 | MVP + HTML/CSS w/ SCSS                               | [ ]    |
+| Day 4 | MVP + HTML/CSS w/ SCSS                               | [x]    |
 | Day 5 | MVP/P-MVP + debugging                                | [ ]    |
 | Day 6 | Deadline: Presentation                               | [ ]    |
 
@@ -161,7 +161,7 @@ https://pixabay.com/api/?key={ key }&q=yellow+flowers&image_type=photo
 | Search button                          | H        | 2hr            | .5 hr       |
 | Images to show                         | H        | 3hr            | 1 hr        |
 | Header/Footer items                    | L        | 1hr            | hr          |
-| Footer items                           | L        | 1hr            | hr          |
+| Routing                                | H        | 2hr            | hr          |
 | Mobile Priority                        | H        | 2hr            | hr          |
 | Use SASS or SCSS                       | H        | 2hr            | hr          |
 | Total                                  | H        | 21hr           | hr          |

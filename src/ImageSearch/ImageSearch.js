@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link, Route, Switch, } from 'react-router-dom'
 
 import './ImageSearch.css';
 
@@ -24,6 +24,12 @@ const ImageSearch = ({ handleGetRequest }) => {
 				<button className='active-recipe_button'>
 					<Link to='/'>Home</Link>
 				</button>
+
+				{/* <Switch>
+					<Route path='/'>
+						<ImageSearch />
+					</Route>
+				</Switch> */}
 			</div>
 		</div>
 	);};
