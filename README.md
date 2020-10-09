@@ -17,7 +17,7 @@
 | Day 2 | Making sure I can get the API recall information out | [x]    |
 | Day 3 | MVP                                                  | [x]    |
 | Day 4 | MVP + HTML/CSS w/ SCSS                               | [x]    |
-| Day 5 | MVP/P-MVP + debugging                                | [ ]    |
+| Day 5 | MVP/P-MVP + debugging                                | [x]    |
 | Day 6 | Deadline: Presentation                               | [ ]    |
 
 ---
@@ -150,49 +150,49 @@ https://pixabay.com/api/?key={ key }&q=yellow+flowers&image_type=photo
 
 ## MVP Time-Frame
 
-| Component                              | Priority | Estimated Time | Actual Time |
-| :------------------------------------- | :------- | :------------- | :---------- |
-| Making sure API link works             | H        | 1hr            | .5 hr       |
-| Having the API call return             | H        | 1hr            | .5 hr       |
-| Image Search going back to API         | H        | 2hr            | 1 hr        |
-| Image List shows images                | H        | 2hr            | 2 hr        |
-| Image View w/ download and author link | H        | 2hr            | hr          |
-| Search bar using Form                  | H        | 2hr            | .5 hr       |
-| Search button                          | H        | 2hr            | .5 hr       |
-| Images to show                         | H        | 3hr            | 1 hr        |
-| Header/Footer items                    | L        | 1hr            | hr          |
-| Routing                                | H        | 2hr            | hr          |
-| Mobile Priority                        | H        | 2hr            | hr          |
-| Use SASS or SCSS                       | H        | 2hr            | hr          |
-| Total                                  | H        | 21hr           | hr          |
+| Component                      | Priority | Estimated Time | Actual Time |
+| :----------------------------- | :------- | :------------- | :---------- |
+| Making sure API link works     | H        | 1hr            | .5 hr       |
+| Having the API call return     | H        | 1hr            | .5 hr       |
+| Image Search going back to API | H        | 2hr            | 1 hr        |
+| Image List shows images        | H        | 2hr            | 2 hr        |
+| Search bar using Form          | H        | 2hr            | .5 hr       |
+| Search button                  | H        | 2hr            | .5 hr       |
+| Images to show                 | H        | 3hr            | 1 hr        |
+| Routing                        | H        | 2hr            | 8 hr        |
+| Mobile Priority                | H        | 2hr            | .5 hr       |
+| Use SASS or SCSS               | H        | 2hr            | 1 hr        |
+| Total                          | H        | 19hr           | 15.5 hr     |
 
 ## PostMVP Time-Frame
 
-| Component                         | Priority | Estimated Time | Actual Time |
-| :-------------------------------- | :------- | :------------- | :---------- |
-| GrayScale theme                   | L        | 1hr            | .5 hr       |
-| ImageView: Use modal w/ bootstrap | L        | 3hr            | hr          |
-| Vuldin Images logo                | L        | 3hr            | hr          |
-| Add API credit to Footer          | M        | 1hr            | hr          |
-| Total                             | H        | 8hr            | hr          |
+| Component                              | Priority | Estimated Time | Actual Time |
+| :------------------------------------- | :------- | :------------- | :---------- |
+| GrayScale theme                        | L        | 1hr            | .5 hr       |
+| ImageView: Use modal w/ bootstrap      | L        | 3hr            | hr          |
+| Vuldin Images logo                     | L        | 3hr            | hr          |
+| Add API credit to Footer               | M        | 1hr            | hr          |
+| Header/Footer items                    | L        | 1hr            | hr          |
+| Image View w/ download and author link | H        | 2hr            | hr          |
+| Total                                  | H        | 8hr            | .5 hr       |
 
 ### MVP
 
 - Make sure API fetches the correct request
 - Images show on page
 - User can input and search for any image they want
-- Header/Footer components
 - Mobile priority
 - Search button and Search bar/form
 - Image Search goes back to API and returns list of images
 - Image List shows images and goes back to API database
-- Image View will also have download and owner credit connected
 - Use SASS or SCSS
 
 ### PostMVP
 
 - Vuldin Images Logo to be created and used
 - Have the entire site be a GrayScale theme
+- Image View will also have download and owner credit connected
+- Header/Footer components
 
 ---
 
@@ -201,15 +201,15 @@ https://pixabay.com/api/?key={ key }&q=yellow+flowers&image_type=photo
 | Component     |                     Description                      |
 | ------------- | :--------------------------------------------------: |
 | App           |    Initial data pull which includes React Router     |
-| Header        |                  Renders the header                  |
-| Footer        |                  Renders the footer                  |
 | Search Bar    |        Renders the search bar for user input         |
 | Search Button |      Renders search button to initialize search      |
 | Images        | Renders the images when user clicks on Search button |
-| Logo          |     Renders my Vuldin Images logo, very postMVP      |
 | Image Search  |      Will have the search bar and search button      |
 | Image List    |     Renders the list of images after user input      |
 | Image View    |         Will show the enlarged image at end          |
+| Header        |             Renders the header -postMVP              |
+| Footer        |             Renders the footer -postMVP              |
+| Logo          |     Renders my Vuldin Images logo, very postMVP      |
 
 ---
 
