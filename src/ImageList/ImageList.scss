@@ -1,0 +1,16 @@
+$background: #34495e;
+$bgColor: #2c3e50;
+$fontColor: #ffff;
+$border: 0;
+$width: 100%;
+
+.image_details {
+  background: $background;
+}
+
+.image_details button {
+  width: $width;
+  border: $border;
+  background-color: $bgColor;
+  color: $fontColor;
+}

@@ -1,0 +1,87 @@
+$width25: 25%;
+$width10: 10%;
+$width100: 100%;
+$posRelative: relative;
+$postAbsolute: absolute;
+$top4px: 4px;
+$textAlign: center;
+$marginBot3: 3rem;
+$transparent: transparent;
+$defaultMargin: 0 auto;
+$borderBot: solid 2px #34495e;
+$paddingBot15: 15px;
+$paddingBot8: 8px;
+$fontWeight: 200;
+$whiteColor: #fff;
+$letterSpacing2: 2px;
+$border0: 0;
+$outline: none;
+$marginRight: 10px;
+$font16: 16px;
+
+.imageSearch {
+	width: $width100;
+	text-align: $textAlign;
+	margin-bottom: $marginBot3;
+	position: $posRelative;
+}
+
+.imageSearch_form input {
+	margin: $defaultMargin;
+	background-color: $transparent;
+	border: $transparent;
+	border-bottom: $borderBot;
+	padding-bottom: $paddingBot15;
+	width: $width25;
+	font-weight: $fontWeight;
+	letter-spacing: $letterSpacing2;
+	font-size: $font16;
+	color: $whiteColor;
+	margin-right: $marginRight;
+}
+
+.imageSearch_form input:focus {
+	outline: $outline;
+}
+
+.imageSearch_form button {
+	border: $border0;
+	width: $width25;
+	position: $postAbsolute;
+	top: $top4px;
+	background: $transparent;
+	border: $borderBot;
+	color: $whiteColor;
+}
+
+@media only screen and (min-width: 768px) {
+	.imageSearch_form button {
+		border: $border0;
+		width: $width10;
+		position: $postAbsolute;
+		top: $top4px;
+		background: $transparent;
+		border: $borderBot;
+		color: $whiteColor;
+	}
+}
+
+.active-recipe_button {
+	margin: $defaultMargin;
+	background-color: $transparent;
+	border: $transparent;
+	border-bottom: $borderBot;
+	width: $width25;
+	font-weight: $fontWeight;
+	letter-spacing: $letterSpacing2;
+	font-size: $font16;
+	color: $whiteColor;
+	margin-right: $marginRight;
+}
+
+a {
+	color: $whiteColor;
+	text-decoration: $outline;
+	padding-bottom: $paddingBot8;
+	font-size: $paddingBot15;
+}

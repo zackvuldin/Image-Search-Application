@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link, Route, Switch, } from 'react-router-dom'
+import { Link, Route, Switch } from 'react-router-dom';
 
-import './ImageSearch.css';
+import './ImageSearch.scss';
 
 const ImageSearch = ({ handleGetRequest }) => {
 	return (
@@ -20,10 +20,11 @@ const ImageSearch = ({ handleGetRequest }) => {
 				</form>
 
 				<button className='active-recipe_button'>
-					<Link to='/'>Home</Link>
+					<Link to='/'>Back</Link>
 				</button>
 			</div>
 		</div>
-	);};
+	);
+};
 
 export default ImageSearch;

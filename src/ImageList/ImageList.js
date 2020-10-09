@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import './ImageList.css';
+import './ImageList.scss';
 
 const ImageList = (props) => {
 	console.log(props.images);
