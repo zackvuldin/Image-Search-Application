@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import './ImageList.scss';
 
 const ImageList = (props) => {
-	console.log(props.images);
 	return (
 		<div className='container'>
 			<div className='row'>

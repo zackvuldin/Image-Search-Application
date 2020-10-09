@@ -3,7 +3,7 @@ import './App.css';
 import ImageSearch from './ImageSearch/ImageSearch';
 import ImageList from './ImageList/ImageList';
 import ImageView from './ImageView/ImageView';
-import { Link, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 const API_KEY = '18550778-11774fb291f3a731ce9063d4e';
 
@@ -12,12 +12,7 @@ class App extends React.Component {
 		images: [],
 		error: null,
 		currentImageData: [],
-		// currentImageData is data that imageList will provide
 	};
-	// create a handleClick
-	// this function will be passed down to imageList
-	// this function will set state to that imageData
-	// research: setState({}) this is class components in react
 
 	handleClick(props) {
 		props.setState(props, []);
@@ -52,7 +47,6 @@ class App extends React.Component {
 							<ImageView {...routerProps} images={this.state.images} />
 						)}
 					/>
-
 					<Route
 						path='/image/'
 						render={(routerProps) => (
@@ -69,10 +63,6 @@ class App extends React.Component {
 						)}
 					</Route>
 				</Switch>
-
-				{/* { this.state.images.length > 0 && this.state.images.map((image) => {
-					return <p key={image.id}>{ image.tags }</p>
-				})} */}
 			</div>
 		);
 	}
