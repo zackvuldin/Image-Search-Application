@@ -24,11 +24,8 @@ const ImageList = (props) => {
 								</div>
 								<div className='image_details'>
 									<Link
-										// props.handleClick this is coming from app.js
-										// onClick pass image object data back up to app.js
 										to={{
 											pathname: `/image/${image.id}`,
-											// state: { props },
 										}}>
 										<button onClick={props.handleClick}>View</button>
 									</Link>
@@ -42,11 +39,3 @@ const ImageList = (props) => {
 };
 
 export default ImageList;
-
-// <Link
-// 	to={{
-// 		pathname: `/image/${image.id}`,
-// 		state: { props },
-// 	}}>
-// 	<button>View</button>
-// </Link>;

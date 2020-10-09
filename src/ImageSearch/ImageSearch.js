@@ -4,8 +4,6 @@ import { Link, Route, Switch, } from 'react-router-dom'
 import './ImageSearch.css';
 
 const ImageSearch = ({ handleGetRequest }) => {
-	// props successfully being logged
-	// console.log(props);
 	return (
 		<div className='imageSearch'>
 			<div>
@@ -24,12 +22,6 @@ const ImageSearch = ({ handleGetRequest }) => {
 				<button className='active-recipe_button'>
 					<Link to='/'>Home</Link>
 				</button>
-
-				{/* <Switch>
-					<Route path='/'>
-						<ImageSearch />
-					</Route>
-				</Switch> */}
 			</div>
 		</div>
 	);};

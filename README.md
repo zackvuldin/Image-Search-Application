@@ -254,3 +254,184 @@ Check the render method of `ImageList`. See https://fb.me/react-warning-keys for
 ```
 
 cant seem to get the router to render on page
+
+converting a function to a class?
+
+```
+class Clock extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Hello, world!</h1>
+        <h2>It is {this.props.date.toLocaleTimeString()}.</h2>
+      </div>
+    );
+  }
+}
+```
+
+passing down function as props
+
+```
+clickMe = (event) => {
+    this.props.clickMe(event.target.value)
+}
+```
+
+passing a parameter to an event handler or callback
+
+```
+<button onClick={() => this.handleClick(id)} />
+```
+
+arrow function in render
+
+```
+class Foo extends Component {
+  handleClick() {
+    console.log('Click happened');
+  }
+  render() {
+    return <button onClick={() => this.handleClick()}>Click Me</button>;
+  }
+}
+```
+
+had to use setState in my App.js/ImageList.js
+
+```
+setState(stateChange[, callback])
+```
+
+nested routing trying it out
+
+```
+   <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/topics">
+            <Topics />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+```
+
+linking to an object
+
+```
+<Link
+  to={{
+    pathname: "/courses",
+    search: "?sort=name",
+    hash: "#the-hash",
+    state: { fromDashboard: true }
+  }}
+/>
+```
+
+because i wasnt using hooks at the start and using class componenets, i had to use location cuz i wanted it to go to a function like to: function
+
+```
+<Link to={location => ({ ...location, pathname: "/courses" })} />
+<Link to={location => `${location.pathname}?sort=name`}
+```
+
+didnt use useEffect()
+
+```
+function usePageViews() {
+  let location = useLocation();
+  React.useEffect(() => {
+    ga.send(["pageview", location.pathname]);
+  }, [location]);
+}
+```
+
+browserRouter as Router
+
+```
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
+);
+```
+
+had help from kenny with this issue on routers and connecting to the array and going to ImageView
+
+```
+<div className='row'>
+{props.images &&
+props.images.map((image) => {
+return (
+<div
+key={image.id}
+className='col-md-4'
+style={{ marginBottom: '2rem' }}>
+<div className='imageList_container'>
+<img
+className='imageList_image'
+src={image.largeImageURL}
+alt={image.tags}
+/>
+</div>
+<div className='image_details'>
+<Link
+to={{
+    pathname: `/image/${image.id}`,
+}}>
+<button onClick={props.handleClick}>View</button>
+</Link>
+```
+
+literally went from huge amounts of ImageView code to something smaller:
+
+```
+const ImageView = (props) => {
+	console.log(props);
+	const singleImage = props.images.filter((image) => {
+		return image.id == props.match.params.image;
+	});
+	console.log(singleImage);
+	return (
+		<div>
+			<img src={singleImage[0].largeImageURL} />;
+		</div>
+	);
+};
+```
+
+my route in App.js to connect to my ImageList and ImageView
+
+```
+<Switch>
+<Route
+path='/image/:image'
+render={(routerProps) => (
+    <ImageView {...routerProps} images={this.state.images} />
+)}
+/>
+
+<Route
+path='/image/'
+render={(routerProps) => (
+    <ImageList {...routerProps} images={this.state.images} />
+)}
+/>
+<Route path='/'>
+{this.state.error !== null ? (
+    <div style={{ color: '#fff', textAlign: 'center' }}>
+        {this.state.error}
+    </div>
+) : (
+    <ImageList images={this.state.images} />
+)}
+</Route>
+</Switch>
+```
