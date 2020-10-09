@@ -5,7 +5,7 @@
 ## Project Links
 
 - [github.com/zackvuldin](https://github.com/zackvuldin/Image-Search-Application)
-- [deployment link](https://github.com/zackvuldin/Image-Search-Application)
+- [netlify: zackimages](https://zackimages.netlify.app/)
 
 ---
 
